@@ -219,6 +219,10 @@ MonoBehaviour:
   xRange: 5.5
   yMin: 3
   yMax: 3
+  positionPitchFactor: -5
+  controlPitchFactor: -20
+  positionYawFactor: 5
+  controlRollFactor: -20
 --- !u!1 &238332924
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,43 +716,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
-        type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -25.966002
       objectReference: {fileID: 0}
     - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -33.561
       objectReference: {fileID: 0}
     - target: {fileID: 5455611178762741646, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 16.197
       objectReference: {fileID: 0}
     - target: {fileID: 5457097257373449896, guid: 54d6e428ba17e084c804b8fb7dcd65e2,
         type: 3}
