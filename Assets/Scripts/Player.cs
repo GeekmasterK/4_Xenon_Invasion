@@ -9,8 +9,9 @@ public class Player : MonoBehaviour
     [Tooltip("In ms^-1")][SerializeField] float speed = 4f;
     [Tooltip("In n")] [SerializeField] float xRange = 5f;
 
-    [Tooltip("In n")] [SerializeField] float yMin = 5f;
-    [Tooltip("In n")] [SerializeField] float yMax = 5f;
+    [Tooltip("In n")] [SerializeField] float yRange = 5f;
+    // [Tooltip("In n")] [SerializeField] float yMin = 5f;
+    // [Tooltip("In n")] [SerializeField] float yMax = 5f;
 
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float controlPitchFactor = -20f;
@@ -59,7 +60,7 @@ public class Player : MonoBehaviour
         float yOffset = yThrow * speed * Time.deltaTime;
 
         float rawYPos = transform.localPosition.y + yOffset;
-        float clampedYPos = Mathf.Clamp(rawYPos, -yMin, yMax);
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
